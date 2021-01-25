@@ -1,0 +1,17 @@
+CREATE TABLE visitantes(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(500)NOT NULL,
+    cpf VARCHAR(11)NOT NULL,
+    origem_visitante VARCHAR(255)NULL,
+    telefone  VARCHAR(11)NOT NULL,
+    imagem VARCHAR(255)NULL,
+    criado DATETIME NOT NULL,
+    editado DATETIME NOT NULL
+);
+
+CREATE TABLE fotos(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    image VARCHAR(255)NULL,
+    criado DATETIME NOT NULL,
+    editado DATETIME NOT NULL
+);
